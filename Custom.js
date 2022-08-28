@@ -4,3 +4,8 @@ function custom_hat(index) {
     app.assets.models.children[119].userData = app.assets.models.children[48].userData
     app.assets.models.children[119].userData.order = 16
 }
+
+function delete_hat() {
+    var delete_it_all = {}
+    app.storage.set('setting-orders', btoa(JSON.stringify(delete_it_all)))
+}

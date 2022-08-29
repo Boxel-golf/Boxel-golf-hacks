@@ -1,4 +1,4 @@
-function custom_hat(index) {
+custom_hat = function(index) {
     app.assets.models.children[119] = app.assets.models.copy(app.assets.models.children[index])
     app.assets.models.children[119].name = 'hat-custom'
     app.assets.models.children[119].userData = app.assets.models.children[48].userData
